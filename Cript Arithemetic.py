@@ -1,7 +1,7 @@
 from itertools import permutations
 
 def solve_cryptarithmetic(puzzle):
-    letters = set("".join(puzzle)) 
+    letters = set("".join(puzzle))  
     if len(letters) > 10:
         return None  
 
@@ -13,8 +13,9 @@ def solve_cryptarithmetic(puzzle):
             return digit_mapping
 
     return None
+
 if _name_ == "_main_":
-    puzzle = ["BASE", "BALL", "MONEY"]
+    puzzle = ["MOON", "NOON", "SOON","JUNE"]
     solution = solve_cryptarithmetic(puzzle)
     if solution:
         print("Solution found:")
